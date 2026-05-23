@@ -89,42 +89,68 @@
             background: var(--coinbase-gray);
             padding: 20px;
             border-radius: 8px;
-            font-style: italic;
             text-align: center;
             margin-top: 30px;
             margin-bottom: 30px;
             border-left: 4px solid var(--coinbase-blue);
+        }
+
+        .callout strong {
+            color: var(--coinbase-dark-blue);
         }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Chris Salvato</h1>
-        <h2>Leadership  Blueprint</h2>
+        <h2>Working Blueprint</h2>
     </div>
 
     <div class="callout">
-        The goal is to move fast together while building something great. This blueprint to make my working style transparent so we can focus on shipping instead of figuring each other out.
+        <strong>I do my best work when we get to the right question early.</strong><br>
+        My bias is to find the underlying structure of the problem, make the model explicit, and use that clarity to pick better product, technical, and company moves.
     </div>
 
-
     <div class="section">
-        <h3>Problem-Solving</h3>
-        
+        <h3>How I Think About Problems</h3>
 
         <div class="bullet-item">
-            <div class="headline">I follow the delete → simplify → accelerate → automate sequence</div>
-            <div class="details">First delete what you can (if you don't add back 10%, you didn't delete enough), then simplify what's left, then speed it up, then automate only what truly adds value.</div>
-        </div> 
-
-        <div class="bullet-item">
-            <div class="headline">I always question requirements before touching code</div>
-            <div class="details">The most important thing to do is make sure we are asking the right questions. Most engineering failures come from tackling problems that should never be tackled, or tackling them from the wrong angle. I always ask: What are we trying to accomplish? Who made this requirement and why? Can we delete it? The most dangerous requirements are the ones we don't question.</div>
+            <div class="headline">I start by finding the real question</div>
+            <div class="details">Most teams do not fail because they cannot execute. They fail because they are solving the wrong problem, honoring the wrong requirement, or optimizing for a local maximum. Before touching implementation, I want to understand what we are actually trying to accomplish, what assumptions are embedded in the request, and whether the work should exist at all.</div>
         </div>
 
         <div class="bullet-item">
-            <div class="headline">I use Double Diamond for complex problems</div>
-            <div class="details"><em>Discover</em> the real problem by rooting out assumptions. <em>Define</em> it clearly. Then brainstorm and <em>Develop</em> multiple solutions to <em>Deliver</em> the right thing. Skipping Discovery and Development of ideas means doing the wrong thing.</div>
+            <div class="headline">I look for the underlying structure beneath the noise</div>
+            <div class="details">When a situation feels messy, I assume there is a cleaner structure underneath it. My instinct is to identify the real constraints, incentives, boundaries, and failure modes so we can stop arguing at the surface level and make better bets.</div>
+        </div>
+
+        <div class="bullet-item">
+            <div class="headline">I make the model explicit early</div>
+            <div class="details">In product and engineering work, I often lead with interface and domain design. I want the nouns, boundaries, contracts, and abstractions clear before we disappear into implementation. Getting the model right early prevents a lot of downstream thrash.</div>
+        </div>
+
+        <div class="bullet-item">
+            <div class="headline">I still use delete → simplify → accelerate → automate</div>
+            <div class="details">Once we are solving the right problem, I prefer to delete what we can, simplify what remains, speed up the valuable parts, and automate only after the shape of the work is sound. Optimization before clarity is usually waste.</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>How I Work Through Ambiguity</h3>
+
+        <div class="bullet-item">
+            <div class="headline">I use discovery to avoid building the wrong thing</div>
+            <div class="details">For complex problems, I naturally work in a Double Diamond pattern: discover what is actually going on, define the real problem, develop multiple viable paths, then deliver. Skipping discovery can look fast, but it usually just creates expensive rework.</div>
+        </div>
+
+        <div class="bullet-item">
+            <div class="headline">I turn clarity into decision velocity</div>
+            <div class="details">I care a lot about getting the framing right because good framing makes the rest of the work move quickly. Once the principles, tradeoffs, and constraints are visible, decisions tend to become straightforward and execution speeds up.</div>
+        </div>
+
+        <div class="bullet-item">
+            <div class="headline">I would rather place a good bet than admire a perfect analysis</div>
+            <div class="details">I value rigorous thinking, but not analysis theater. My goal is to understand the system well enough to make a strong move, learn quickly, and keep adjusting as reality teaches us more.</div>
         </div>
     </div>
 
@@ -132,85 +158,66 @@
         <h3>How I Communicate</h3>
 
         <div class="bullet-item">
-            <div class="headline">I ask a ton of questions</div>
-            <div class="details">I learn best by asking pointed questions, not by reading docs. So I ask a ton of them. They are not a challenge, just a probe. The highest performing teams are great at asking and answering questions quickly.</div>
-        </div>
-        
-        <div class="bullet-item">
-            <div class="headline">Communicate to decide and act</div>
-            <div class="details">Every communication needs to move us closer to taking action. Docs are usually not the best for this. Conversations and whiteboarding is better. Docs help refine thinking but then let's talk through it.</div>
+            <div class="headline">I ask pointed questions to sharpen the problem</div>
+            <div class="details">If I ask a lot of questions, it is not posturing. It is usually because I am trying to surface assumptions, expose ambiguity, and get us to a clearer shared model. I would rather have a sharp conversation early than a confused execution cycle later.</div>
         </div>
 
         <div class="bullet-item">
-            <div class="headline">You cannot be too direct with me</div>
-            <div class="details">I'm allergic to sugar-coating. Be brutally honest - blunt feedback over diplomatic language. I strive to keep trust batteries charged so we can sacrifice tact for honesty and directness.</div>
+            <div class="headline">I communicate to decide and act</div>
+            <div class="details">I like communication that helps a team understand the tradeoffs, make a call, and move. I am happy to use docs when they clarify thinking, but I usually prefer conversation when the goal is alignment or decision-making.</div>
         </div>
 
         <div class="bullet-item">
-            <div class="headline">I need to understand what you want</div>
-            <div class="details">If I know what's important to you, I'll move mountains to help you get it. If I don't know, I can't help effectively. Be explicit about your goals and what success looks like for you.</div>
+            <div class="headline">Directness works well with me</div>
+            <div class="details">I prefer candor over diplomacy theater. I would rather hear the strongest version of what is true than spend energy decoding politeness. Clear disagreement is useful. Hidden disagreement is expensive.</div>
+        </div>
+
+        <div class="bullet-item">
+            <div class="headline">Tell me what matters to you</div>
+            <div class="details">If I understand your goals, constraints, and definition of success, I can be a much better partner. Context makes my judgment more useful.</div>
         </div>
     </div>
 
     <div class="section">
-        <h3>Decision Making</h3>
-        
+        <h3>How I Make Decisions</h3>
+
         <div class="bullet-item">
-            <div class="headline">Make most decisions at the edges; only sometimes from the top</div>
-            <div class="details">I believe people closest to the problem should be the ones making decisions. 
-                Extreme Ownership is the most effective way to operate, so I own all the decisions of my team  (blame is mine, credit is yours). 
-                At the same time, I believe in deferring to leadership when there's context missing from the edges.</div>
+            <div class="headline">I want decisions made as close to the truth as possible</div>
+            <div class="details">In general, the people closest to the problem should make the call. I care about ownership and judgment at the edges, while recognizing that leadership context can matter when the local view is incomplete.</div>
         </div>
 
         <div class="bullet-item">
             <div class="headline">I have strong opinions, loosely held</div>
-            <div class="details">I'm confident in my positions but my mind changes instantly with credible counter-evidence. Challenge my thinking - I welcome it. Come with strong opinions based on your research.</div>
+            <div class="details">I am comfortable taking a position, but I expect good evidence and reasoning to change my mind. I do not want consensus for its own sake; I want the best understanding we can get.</div>
         </div>
 
         <div class="bullet-item">
-            <div class="headline">I decide very quickly</div>
-            <div class="details">When deciding, I sacrifice "perfect" for "good enough." Bad decisions can be fixed with future choices. I use data to inform decisions but don't obsess over data or metrics. Many critical factors aren't measured.</div>
+            <div class="headline">I try to make principled decisions that scale</div>
+            <div class="details">I spend a lot of time making the governing principles explicit. When a team agrees on the principles, individual decisions get faster, cleaner, and more consistent.</div>
         </div>
 
         <div class="bullet-item">
-            <div class="headline">Make principled decisions</div>
-            <div class="details">
-                Similar to making sure we ask the right questions, it's best to decide based on principles we all believe in. I spend a lot of time 
-                aligning on and defining these principles. Once principles are defined, deciding is fast.
-            </div>
+            <div class="headline">I decide quickly once the frame is right</div>
+            <div class="details">I do not chase false precision. Once I understand the shape of the problem and the relevant tradeoffs, I am comfortable making a call and updating as new information arrives.</div>
         </div>
     </div>
 
     <div class="section">
-        <h3>Key Quirks</h3>
-        
+        <h3>What Teammates Can Expect From Me</h3>
+
         <div class="bullet-item">
-            <div class="headline">Slow is smooth. Smooth is fast.</div>
-            <div class="details">I belive the best way to move quickly is to ease my foot off the pedal to move a bit more slowly, but with more control. I believe in speed, but found that being full throttle counterintuitively slows us down.</div>
+            <div class="headline">I will push us toward what actually matters</div>
+            <div class="details">I am comfortable letting secondary fires burn if that is what it takes to protect the important thing. If I think we are spending energy on motion without value, I will say so.</div>
         </div>
 
         <div class="bullet-item">
-            <div class="headline">I ramp slower but master faster</div>
-            <div class="details">It annoys my family that I am terrible at a new board game the first 10 times, then suddenly never lose. At work, I may take longer than expected to get started and get my bearings, but then become unstoppable much faster. Please be patient during my ramp period.</div>
+            <div class="headline">I care about truth-seeking, not consensus theater</div>
+            <div class="details">I want us to see the world as it is, including the inconvenient parts. That often means probing assumptions, debating tradeoffs, and being honest about what we know, what we do not know, and what is probably noise.</div>
         </div>
 
         <div class="bullet-item">
-            <div class="headline">I will always find a way</div>
-            <div class="details">No problem is unsolvable, though solutions may require creativity. I'm solution-oriented and will help you find a way through any obstacle. Don't struggle in silence.</div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h3>What I Expect From My Teammates</h3>
-
-        <div class="bullet-item">
-            <div class="headline">Focus on what matters, let other fires burn</div>
-            <div class="details">It's better to let some things slide while focusing on what's truly important. If I feel we're working on something that's a waste of time, I will let you know immediately. Please do the same.</div>
-        </div>
-
-        <div class="bullet-item">
-            <div class="headline">Truth-seeking</div>
-            <div class="details">I care very deeply that we see the world as it is and act on the truth. That means debate and discussion to understand what's real, what's not and what's biased so we make the best decisions. Some people find this frustrating, but it can be very fast with practice.</div>
+            <div class="headline">I am optimistic, but not naive</div>
+            <div class="details">I generally believe there is a way through hard problems, but I do not confuse optimism with hand-waving. I want the real constraints on the table so we can find the move that actually works.</div>
         </div>
     </div>
 </body>
